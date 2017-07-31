@@ -22,25 +22,27 @@
 
             <!-- ***** Left Navigation Bar ***** -->
             <div id="leftnav">
-                <div class="nav-bubble">
+                <div class="hello-nav nav-bubble">
                     Hello
                 </div>
                 
-                <div class="nav-bubble">
+                <div class="contact-center-nav nav-bubble">
                     Contact Center
 
                 </div>
-                    <div class="sub-bubble">
+                    <div class="my-team-nav sub-bubble">
+                        <span></span>
                     </div>
                 
-                <div class="nav-bubble">
+                <div class="project-one-nav nav-bubble">
                     Project One
 
                 </div>
-                    <div class="sub-bubble">
+                    <div class="paul-nav sub-bubble">
+                        <span></span>
                     </div>
                 
-                <div class="nav-bubble">
+                <div class="farewell-nav nav-bubble">
                     Farewell
                 </div>
 
@@ -74,5 +76,40 @@
             </div>
         </div>
 
+
+        <script>
+            // scroll to content class
+            $(".hello-nav").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#hello").offset().top},
+                    'slow');
+            });
+            $(".contact-center-nav").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#contact-center").offset().top},
+                    'slow');
+            });
+            $(".my-team-nav").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#my-team").offset().top},
+                    'slow');
+            });
+            $(".project-one-nav").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#project-one").offset().top},
+                    'slow');
+            });
+            $(".paul-nav").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#paul").offset().top},
+                    'slow');
+            });
+            $(".farewell-nav").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#farewell").offset().top},
+                    'slow');
+            });
+            
+        </script>
     </body>
 </html>
