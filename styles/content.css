@@ -1,0 +1,12 @@
+#content {
+    width: calc(100% - 100px);
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.slide {
+    height: 100vh;
+    width: 100%;
+    background: goldenrod;
+}
