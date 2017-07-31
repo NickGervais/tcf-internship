@@ -1,12 +1,44 @@
 #content {
     width: calc(100% - 100px);
+    margin: 0px;
+    padding: 0px;
     position: absolute;
     top: 0px;
     left: 100px;
+    right: 0px;
+
 }
 
 .slide {
     height: 100vh;
-    width: 100%;
-    background: goldenrod;
+    padding: 10px; 
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+}
+
+#hello {
+    background: #4ABDAC;
+}
+
+#contact-center{
+    background: #F7B733;
+
+}
+
+#my-team{
+    background: #4ABDAC;
+}
+
+#project-one{
+    background: #F7B733;
+
+}
+
+#paul {
+    background: #4ABDAC;
+}
+
+#farewell {
+    background: #F7B733;
+
 }
