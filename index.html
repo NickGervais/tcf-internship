@@ -52,16 +52,22 @@
             <div id="content">
                 <div id="hello" class="slide">
                     <h1>Hello, I'm Nick Gervais.</h1>
-                    <div> 
+                    <div class="split-memo"> 
                         <div>I attend UMD, gradutating Spring 2019</div>
-                        <div>I live in Coon Rapids</div>
+                        <div>I live in Coon Rapids MN during the summers</div>
                     </div>
-                    <div>
-                        This summer I worked in the IT Contact Center, a part of Ryan Hawkins team.
+                    <div class="text2">
+                        This summer at TCF I worked in the IT Contact Center, as a part of Ryan Hawkins team.
+                        And I also worked on the Project One Chart of Accounts erp team.
                     </div>
-                    <div>
+                    <div class="text2">
                         My manager is a fantastic man named Guillermo Chapellin.
                     </div>
+                    <div class="cta">
+                        Here's my TCF Intern Experience!
+                    </div>
+
+
                 </div>
 
                 <div id="contact-center" class="slide">
@@ -119,7 +125,54 @@
                     scrollTop: $("#farewell").offset().top},
                     'slow');
             });
+
+            $(".cta").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#contact-center").offset().top},
+                    'slow');
+            });
             
+            // calls checkWindowPos on every scroll event
+            $(window).scroll(function() {
+                checkWindowPos();
+            });
+            // calls checkWindowPos when page is ready
+            $(document).ready(function() {
+                checkWindowPos();
+            });
+
+                    // checks if the top of the window is below the content and changes classes accordingly
+            function checkWindowPos(){
+                console.log("checking win pos");
+                var winPos = $(this).scrollTop();
+                var helloTop = $("#hello").offset().top;
+                var ccTop = $("#contact-center").offset().top;
+                var mtTop = $("#my-team").offset().top;
+                var poTop = $("#project-one").offset().top;
+                var paulTop = $("#paul").offset().top;
+                var fTop = $("#farewell").offset().top;
+
+                if (winPos >= fTop) {
+                    $("#leftnav div").removeClass("focus");
+                    $(".farewell-nav").addClass("focus");
+                } else if(winPos >= paulTop) {
+                    $("#leftnav div").removeClass("focus");
+                    $(".paul-nav").addClass("focus");
+                } else if(winPos >= poTop) {
+                    $("#leftnav div").removeClass("focus");
+                    $(".project-one-nav").addClass("focus");
+                } else if(winPos >= mtTop) {
+                    $("#leftnav div").removeClass("focus");
+                    $(".my-team-nav").addClass("focus");
+                } else if(winPos >= ccTop) {
+                    $("#leftnav div").removeClass("focus");
+                    $(".contact-center-nav").addClass("focus");
+                } else if(winPos >= helloTop) {
+                    $("#leftnav div").removeClass("focus");
+                    $(".hello-nav").addClass("focus");
+                }
+            }
+
         </script>
     </body>
 </html>
