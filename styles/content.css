@@ -6,7 +6,14 @@
     top: 0px;
     left: 100px;
     right: 0px;
+    transition: all .2s ease-in-out;
+}
 
+@media (max-width: 950px) {
+    #content {
+        width: 100%;
+        left: 0px;
+    }
 }
 
 .slide {
