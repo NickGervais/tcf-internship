@@ -1,0 +1,66 @@
+#hello {
+    background: #4ABDAC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hello > h1 {
+    max-width: 90%;
+}
+
+.split-memo {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.split-memo > div {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.seperator{
+    width: 2px;
+    height: 80px;
+    background: black;
+}
+
+.cta{
+    margin: 30px 5px;
+    padding: 20px;
+    text-align: center;
+    background: #FC4A1A;
+    box-shadow: -1px 1px 0px #fc754f,
+    -2px 2px 0px #fc754f,
+    -3px 3px 0px #fc754f,
+    -4px 4px 0px #fc754f,
+    -5px 5px 0px #fc754f,
+    -6px 6px 0px #fc754f;
+    border-radius: 8px;
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.cta:hover{
+         box-shadow: -1px 1px 0px #fc754f,
+    -2px 2px 0px #fc754f,
+    -3px 3px 0px #fc754f,
+    -4px 4px 0px #fc754f,
+    -5px 5px 0px #fc754f,
+    -6px 6px 0px #fc754f,
+    -7px 7px 0px #fc754f,
+    -8px 8px 0px #fc754f;
+    transform: translate(2px, -4px);
+}
+
+.cta:active{
+    box-shadow: -1px 1px 0px #fc754f,
+        -2px 2px 0px #fc754f;
+    transform: translate(-4px, 4px);
+}

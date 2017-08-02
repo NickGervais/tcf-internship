@@ -8,12 +8,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
         <!-- ***** Fonts ***** -->
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Bangers" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Bangers|Itim" rel="stylesheet">
 
         <!-- ***** CSS ***** -->
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/leftnav.css">
         <link rel="stylesheet" href="styles/content.css">
+        <link rel="stylesheet" href="styles/hello.css">
+        <link rel="stylesheet" href="styles/contact-center.css">
+
         
     </head>
     <body>
@@ -58,9 +61,10 @@
             <!-- ***** Content / Slides ***** -->
             <div id="content">
                 <div id="hello" class="slide">
-                    <h1>Hello, I'm Nick Gervais.</h1>
+                    <h1 >Hello, I'm Nick Gervais.</h1>
                     <div class="split-memo"> 
                         <div>I attend UMD, gradutating Spring 2019</div>
+                        <div class="seperator"></div>
                         <div>I live in Coon Rapids MN during the summers</div>
                     </div>
                     <div class="text2">
@@ -68,9 +72,9 @@
                         And I also worked on the Project One Chart of Accounts erp team.
                     </div>
                     <div class="text2">
-                        My manager is a fantastic man named Guillermo Chapellin.
+                        My manager is a fantastic man named Guillermo Chapellin. And my mentor is a man of many jobs, Jerry Wadell.
                     </div>
-                    <div class="cta">
+                    <div id="cta1" class="cta">
                         Here's my TCF Intern Experience!
                     </div>
 
@@ -78,7 +82,52 @@
                 </div>
 
                 <div id="contact-center" class="slide">
-                    <h1>Contact Center</h1>
+                    <div style="width: 100%; text-align: center;">
+                        <h1 class="title">Contact Center</h1>
+                        <h3>No, I don't take phone calls...</h3>
+                    </div>
+                    <div class="split-content">
+                        <div class="left">
+                            <div>
+                                My project this summer was to create a <strong>new IVR Test Tool</strong>.
+                            </div>
+                            <div>
+                                All of the source code had been lost for the old test tool, and there was many approvements that could be made, so we made a new one!
+                            </div>
+                            <div>
+                                <strong> Improvements include: </strong>
+                                <ul>
+                                    <li>A dynamic add, edit, and remove process</li>
+                                    <li>Fully dynamic form builder</li>
+                                    <li>Admin and User roles / access</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong> Technologies used: </strong>
+                                <ul>
+                                    <li>MEAN Stack</li>
+                                    <li>Spring Boot</li>
+                                    <li>Open Shift / Kubernetes / Docker</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="right">
+                            <div>
+                                <div class="screenshots">
+                                    <div class="screenshot2">
+                                    </div>
+                                    <div class="screenshot1">
+                                    </div>
+                                </div>
+                                <div class="caption">
+                                    NEWTT = New Enterprise Websphere Test Tool
+                                </div>
+                            </div>
+                            <div  id="cta2" class="cta">
+                                Check out My Team!
+                            </div>
+                        </div> 
+                    </div>
                 </div>
 
                 <div id="my-team" class="slide">
@@ -169,7 +218,7 @@
                 }
             });
 
-            $(".cta").click(function() {
+            $("#cta1").click(function() {
                 if($(window).width() > 950){
                     $('html,body').animate({
                         scrollTop: $("#contact-center").offset().top},
@@ -177,6 +226,18 @@
                 } else {
                     $('html,body').animate({
                         scrollTop: $("#contact-center").offset().top - 60},
+                        'slow');
+                }
+            });
+
+            $("#cta2").click(function() {
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#my-team").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#my-team").offset().top - 60},
                         'slow');
                 }
             });
