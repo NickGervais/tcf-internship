@@ -20,12 +20,12 @@
 
         <div id="wrapper">
 
-            <div id="menu-icon">
+            <!-- <div id="menu-icon">
                 <svg class="black-icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                 </svg>
-            </div>
+            </div> -->
 
             <!-- ***** Left Navigation Bar ***** -->
             <div id="leftnav">
@@ -103,46 +103,82 @@
         <script>
             // scroll to content class
             $(".hello-nav").click(function() {
-                $("#leftnav").addClass('closed');
-                $('html,body').animate({
-                    scrollTop: $("#hello").offset().top},
-                    'slow');
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#hello").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#hello").offset().top - 60},
+                        'slow');
+                }
             });
             $(".contact-center-nav").click(function() {
-                $("#leftnav").addClass('closed');
-                $('html,body').animate({
-                    scrollTop: $("#contact-center").offset().top},
-                    'slow');
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#contact-center").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#contact-center").offset().top - 60},
+                        'slow');
+                }
             });
             $(".my-team-nav").click(function() {
-                $("#leftnav").addClass('closed');
-                $('html,body').animate({
-                    scrollTop: $("#my-team").offset().top},
-                    'slow');
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#my-team").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#my-team").offset().top - 60},
+                        'slow');
+                }
             });
             $(".project-one-nav").click(function() {
-                $("#leftnav").addClass('closed');
-                $('html,body').animate({
-                    scrollTop: $("#project-one").offset().top},
-                    'slow');
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#project-one").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#project-one").offset().top - 60},
+                        'slow');
+                }
             });
             $(".paul-nav").click(function() {
-                $("#leftnav").addClass('closed');
-                $('html,body').animate({
-                    scrollTop: $("#paul").offset().top},
-                    'slow');
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#paul").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#paul").offset().top - 60},
+                        'slow');
+                }
             });
             $(".farewell-nav").click(function() {
-                $("#leftnav").addClass('closed');
-                $('html,body').animate({
-                    scrollTop: $("#farewell").offset().top},
-                    'slow');
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#paul").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#paul").offset().top - 60},
+                        'slow');
+                }
             });
 
             $(".cta").click(function() {
-                $('html,body').animate({
-                    scrollTop: $("#contact-center").offset().top},
-                    'slow');
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#contact-center").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#contact-center").offset().top - 60},
+                        'slow');
+                }
             });
             
             // calls checkWindowPos on every scroll event
@@ -154,7 +190,7 @@
                 checkWindowPos();
             });
 
-                    // checks if the top of the window is below the content and changes classes accordingly
+                    // checks if a slide appears in more than half the window and changes classes to bubbles accordingly
             function checkWindowPos(){
                 var winHeight = $(window).height();
                 var winPos = $(this).scrollTop();
