@@ -234,6 +234,7 @@
                 }
             });
 
+            // CTA button functions
             $("#cta1").click(function() {
                 if($(window).width() > 950){
                     $('html,body').animate({
@@ -254,6 +255,18 @@
                 } else {
                     $('html,body').animate({
                         scrollTop: $("#my-team").offset().top - 60},
+                        'slow');
+                }
+            });
+
+            $("#cta3").click(function() {
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#project-one").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#project-one").offset().top - 60},
                         'slow');
                 }
             });
