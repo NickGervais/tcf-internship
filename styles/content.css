@@ -32,6 +32,18 @@ h1 {
     text-align: center;
 }
 
+@media (max-width: 1550px){
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1300px){
+    .text2 {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 950px) {
     #content {
         height: calc(100% - 60px);

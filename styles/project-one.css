@@ -44,6 +44,10 @@
     justify-content: space-around;
 }
 
+.right-side > div {
+    font-size: 28px;
+}
+
 .cta-small{
     display: flex;
     justify-content: center;
@@ -77,6 +81,17 @@
     transform: translate(-3px, 3px);
 }
 
+
+@media (max-width: 1400px) {
+    .image-window {
+        height: 300px;
+        width: 400px;
+    }
+    .right-side > div {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 950px){
     .cta-small {
         margin: 0px 3px 0px 5px;
@@ -87,9 +102,7 @@
         height: 200px;
         width: 300px;
     }
-}
-
-.flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
+    .right-side > div {
+        font-size: 16px;
+    }
 }

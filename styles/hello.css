@@ -79,3 +79,9 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 1300px){
+    .split-memo > div {
+        font-size: 22px;
+    }
+}
