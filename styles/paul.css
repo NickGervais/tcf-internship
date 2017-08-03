@@ -11,7 +11,10 @@
     width: 400px;  
     /* height: 80%;
     width: 60%; */
-    background: lightgray; 
+    background: lightgray;
+    background-image: url('../images/paul.jpg'); 
+    background-size: cover;
+    background-position: center;
 }
 
 .flex-center {
