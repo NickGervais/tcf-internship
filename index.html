@@ -464,11 +464,15 @@
                 var mtTop = $("#my-team").offset().top;
                 var poTop = $("#project-one").offset().top;
                 var paulTop = $("#paul").offset().top;
+                var learnTop = $("#learn").offset().top;
                 var fTop = $("#farewell").offset().top;
 
                 if (winPos >= fTop - winHeight*0.5) {
                     $("#leftnav div").removeClass("focus");
                     $(".farewell-nav").addClass("focus");
+                } else if(winPos >= learnTop - winHeight*0.5) {
+                    $("#leftnav div").removeClass("focus");
+                    $(".learn-nav").addClass("focus");
                 } else if(winPos >= paulTop - winHeight*0.5) {
                     $("#leftnav div").removeClass("focus");
                     $(".paul-nav").addClass("focus");
@@ -484,7 +488,7 @@
                 } else if(winPos >= helloTop - winHeight*0.5) {
                     $("#leftnav div").removeClass("focus");
                     $(".hello-nav").addClass("focus");
-                }
+                } 
             }
 
             $("#menu-icon").click(function(e){
