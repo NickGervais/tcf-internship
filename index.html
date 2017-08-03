@@ -322,6 +322,17 @@
                         'slow');
                 }
             });
+            $(".learn-nav").click(function() {
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#learn").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#learn").offset().top - 60},
+                        'slow');
+                }
+            });
             $(".farewell-nav").click(function() {
                 if($(window).width() > 950){
                     $('html,body').animate({
