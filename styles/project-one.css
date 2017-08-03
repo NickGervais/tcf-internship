@@ -8,6 +8,7 @@
 
 .material-icons.large {
     font-size: 35px;
+    cursor: pointer;
 }
 
 .left-side {
