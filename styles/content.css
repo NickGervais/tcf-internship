@@ -12,6 +12,18 @@
 .slide {
     height: 100vh;
     font-family: 'Itim', cursive;
+    overflow: hidden;
+}
+
+
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+    font-size: 100px;
+    border-bottom: 4px solid black;
 }
 
 @media (max-width: 950px) {
@@ -24,16 +36,10 @@
     .slide {
         height: calc(100vh - 60px);
     }
-}
 
-
-h1 {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-    text-align: center;
-    font-size: 100px;
-    border-bottom: 4px solid black;
+    h1 {
+        font-size: 35px;
+    }
 }
 
 .text2 {
