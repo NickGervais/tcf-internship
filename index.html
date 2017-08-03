@@ -311,6 +311,18 @@
                         'slow');
                 }
             });
+
+            $("#cta4").click(function() {
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#paul").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#paul").offset().top - 60},
+                        'slow');
+                }
+            });
             
             // calls checkWindowPos on every scroll event
             $(window).scroll(function() {
