@@ -6,11 +6,6 @@
     align-items: center;
 }
 
-.material-icons.large {
-    font-size: 35px;
-    cursor: pointer;
-}
-
 .left-side {
     display: flex;
     flex-direction: column;
@@ -80,4 +75,21 @@
 .cta-small:active{
     box-shadow: -1px 1px 0px #fc754f;
     transform: translate(-3px, 3px);
+}
+
+@media (max-width: 950px){
+    .cta-small {
+        margin: 0px 3px 0px 5px;
+        padding: 2px;
+        font-size: 18px;
+    }
+    .image-window {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
