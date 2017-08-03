@@ -48,3 +48,36 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+.cta-small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px 0px 8px;
+    padding: 5px;
+    text-align: center;
+    background: #FC4A1A;
+    box-shadow: -1px 1px 0px #fc754f,
+    -2px 2px 0px #fc754f,
+    -3px 3px 0px #fc754f,
+    -4px 4px 0px #fc754f;
+
+    border-radius: 8px;
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+.cta-small:hover{
+         box-shadow: -1px 1px 0px #fc754f,
+    -2px 2px 0px #fc754f,
+    -3px 3px 0px #fc754f,
+    -4px 4px 0px #fc754f,
+    -5px 5px 0px #fc754f;
+    transform: translate(1px, -1px);
+}
+
+.cta-small:active{
+    box-shadow: -1px 1px 0px #fc754f;
+    transform: translate(-3px, 3px);
+}
