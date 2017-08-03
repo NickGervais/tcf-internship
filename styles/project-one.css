@@ -27,25 +27,17 @@
 
 .image-window {
     height: 400px;
-    width: 550px;
-    background: white;
+    width: 600px;
+    background: transparent;
     position: relative;
 }
 
 .slideImage {
     height: 100%;
     width: 100%;
-    background-size: cover;
-    position: absolute;
-    opacity: 1;
-    visibility: 1;
-    transition: all .2s ease-in-out;
-    z-index: 1;
-}
-
-.hidden {
-    visibility: hidden;
-    opacity: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .divider {
