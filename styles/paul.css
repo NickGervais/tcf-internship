@@ -7,14 +7,12 @@
 }
 
 .paul-img {
-    height: 600px;
-    width: 400px;  
-    /* height: 80%;
-    width: 60%; */
+    height: 500px;
+    width: 350px;  
     background: lightgray;
     background-image: url('../images/paul.jpg'); 
     background-size: cover;
-    background-position: center;
+    background-position: 50% 100%;
 }
 
 .flex-center {
@@ -23,4 +21,36 @@
 
 .text-center {
     text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1300px){
+    .paul-img {
+        height: 400px;
+        width: 275px;
+    }
+}
+
+@media (max-width: 950px){
+    .paul-img{
+        height: 300px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .paul-img {
+        height: 200px;
+        width: 190px;
+    }
+    .non-mobile {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 }
