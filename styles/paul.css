@@ -1,0 +1,21 @@
+#paul {
+    background: #4ABDAC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paul-img {
+    height: 600px;
+    width: 400px;
+    background: lightgray; 
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
