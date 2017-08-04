@@ -10,6 +10,8 @@
         <!-- ***** Fonts ***** -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Bangers|Itim" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 
         <!-- ***** CSS ***** -->
         <link rel="stylesheet" href="styles/style.css">
@@ -274,13 +276,40 @@
                 <div id="learn" class="slide">
                     <h1>What I Learned</h1>
                     <div class="grid">
-                        <div class="tile odd">Mean Stack</div>
-                        <div class="tile">Agile Development</div>
-                        <div class="tile odd">Spring Boot</div>
+                        <div class="tile odd">
+                            <div>
+                                <i class="devicon-mongodb-plain-wordmark colored small-logo"></i>
+                                <i class="devicon-express-original colored small-logo"></i>
+                                <i class="devicon-angularjs-plain colored small-logo"></i>
+                                <i class="devicon-nodejs-plain colored small-logo"></i>
+                            </div>
+                            Mean Stack
+                        </div>
+                        
+                        <div class="tile">
+                            Agile Development
+                        </div>
+                        <div class="tile odd">
+                            <img src="./images/spring.png" class="small-logo">
+                            
+                            Spring Boot
+                        </div>
                         <div class="tile">Team Work</div>
-                        <div class="tile odd">Docker</div>                        
+                        <div class="tile odd">
+                            <i class="devicon-docker-plain colored small-logo"></i>
+                            Docker
+                        </div>                        
                         <div class="tile">Networking</div>
-                        <div class="tile odd">Html / CSS</div>
+                        <div class="tile odd">
+                            <div>
+                                <i class="devicon-html5-plain small-logo"></i>
+                                <i class="devicon-css3-plain colored small-logo"></i>
+                            </div>
+                            Html / CSS
+                        </div>
+                        <div id="cta6" class="cta flex-center">
+                            Next Slide
+                        </div>
                     </div>
                 </div>
 
@@ -461,6 +490,17 @@
                 } else {
                     $('html,body').animate({
                         scrollTop: $("#learn").offset().top - 60},
+                        'slow');
+                }
+            });
+            $("#cta6").click(function() {
+                if($(window).width() > 950){
+                    $('html,body').animate({
+                        scrollTop: $("#farewell").offset().top},
+                        'slow');
+                } else {
+                    $('html,body').animate({
+                        scrollTop: $("#farewell").offset().top - 60},
                         'slow');
                 }
             });

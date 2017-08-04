@@ -23,6 +23,10 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.19), 0 2px 3px rgba(0,0,0,0.23); 
     border-radius: 5px;
     font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 /* 
 .tile:hover {
@@ -31,6 +35,18 @@
 
 .tile.odd {
     background: #FC4A1A;
+}
+
+.small-logo {
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1000px){
