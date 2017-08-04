@@ -95,6 +95,22 @@
     transform: translate(-3px, 3px);
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.is-mobile {
+    display: none;
+}
+
 
 @media (max-width: 1400px) {
     .image-window {
@@ -118,5 +134,14 @@
     }
     .right-side > div {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 680px) {
+    .is-mobile {
+        display: block;
+    }
+    .not-mobile {
+        display: none;
     }
 }
