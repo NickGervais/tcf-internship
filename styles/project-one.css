@@ -34,6 +34,20 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.center-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.classified {
+    font-family: sans-serif;
+    font-weight: 700;
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    transform: rotate(-20deg);
+}
 
 .divider {
     width: 60px;

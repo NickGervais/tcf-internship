@@ -84,4 +84,9 @@
     .split-memo > div {
         font-size: 22px;
     }
+    .cta {
+        margin: 15px 5px;
+        padding: 12px;
+        font-size: 22px;
+    }
 }

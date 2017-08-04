@@ -25,9 +25,9 @@
     align-items: flex-start;
 }
  
-.left > div {
-    font-size: 24px;
-} 
+ .left > div {
+    text-align: left;
+}  
 
 .right {
     position: static;
