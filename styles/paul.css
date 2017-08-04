@@ -53,4 +53,7 @@
     .mobile {
         display: block;
     }
+    .right {
+        margin-left: 0px;
+    }
 }
