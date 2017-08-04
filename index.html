@@ -96,17 +96,17 @@
                 <div id="contact-center" class="slide">
                     <div style="width: 100%; text-align: center;">
                         <h1 class="title">Contact Center</h1>
-                        <h3>No, I don't take phone calls...</h3>
+                        <div class="caption">No, I don't take phone calls... I code.</div>
                     </div>
                     <div class="split-content">
-                        <div class="left">
-                            <div class="text2">
-                                My project this summer was to create a <strong>new IVR Test Tool</strong>.
+                        <div class="left not-mobile">
+                            <div class="text3">
+                                <strong>Project:</strong> new IVR Test Tool.
                             </div>
-                            <div class="text2">
-                                All of the source code had been lost for the old test tool, and there was many approvements that could be made, so we made a new one!
+                            <div class="text3">
+                                <strong>Why:</strong> All of the source code had been lost for the old test tool, and there was many approvements that could be made, so we made a new one!
                             </div>
-                            <div class="text2">
+                            <div class="text3">
                                 <strong> Improvements include: </strong>
                                 <ul>
                                     <li>A dynamic add, edit, and remove process</li>
@@ -114,7 +114,7 @@
                                     <li>Admin and User roles / access</li>
                                 </ul>
                             </div>
-                            <div class="text2">
+                            <div class="text3">
                                 <strong> Technologies used: </strong>
                                 <ul>
                                     <li>MEAN Stack</li>
@@ -125,14 +125,57 @@
                         </div>
                          <div class="right">
                             <div>
-                                <div class="screenshots">
-                                    <div class="screenshot2">
+                                <div style="text-align: center;">
+                                    <div class="flex-row">
+                                        <div id="slide-left" class="cta-small">
+                                            <i class="material-icons large">keyboard_arrow_left</i>
+                                        </div>
+                                        <div class="center-box">
+                                            <div class="image-window">
+                                                <div class="slideImage" style="background: lightgray;">
+                                                </div>
+                                                <div class="slideImage" style="background: white;">
+                                                </div>
+                                                <div class="slideImage" style="background: lightgray;">
+                                                </div>
+                                                <div class="slideImage" style="background: white;">
+                                                </div>
+                                            </div>
+                                            <div class="classified">
+                                                CLASSIFIED
+                                            </div>
+                                        </div>
+                                        <div id="slide-right" class="cta-small">
+                                            <i class="material-icons large">keyboard_arrow_right</i>
+                                        </div>
                                     </div>
-                                    <div class="screenshot1">
+                                    <div class="caption">
+                                        NEWTT = New Enterprise Websphere Test Tool.
                                     </div>
                                 </div>
-                                <div class="caption">
-                                    NEWTT = New Enterprise Websphere Test Tool
+                            </div>
+                            <div class="left is-mobile">
+                                <div class="text3">
+                                    <strong>Project:</strong> new IVR Test Tool.
+                                </div>
+                                <div class="text3">
+                                    <strong>Why:</strong> All of the source code had been lost for the old test tool, and there was many approvements that could be made, so we made a new one!
+                                </div>
+                                <div class="text3">
+                                    <strong> Improvements include: </strong>
+                                    <ul>
+                                        <li>A dynamic add, edit, and remove process</li>
+                                        <li>Fully dynamic form builder</li>
+                                        <li>Admin and User roles / access</li>
+                                    </ul>
+                                </div>
+                                <div class="text3">
+                                    <strong> Technologies used: </strong>
+                                    <ul>
+                                        <li>MEAN Stack</li>
+                                        <li>Spring Boot</li>
+                                        <li>Open Shift / Kubernetes / Docker</li>
+                                    </ul>
                                 </div>
                             </div>
                             <div  id="cta2" class="cta">
@@ -168,25 +211,25 @@
                         <div class="left-side">
                             <div style="text-align: center;">
                                 <div class="flex-row">
-                                    <div id="slide-left" class="cta-small">
+                                    <div id="slide-left2" class="cta-small">
                                         <i class="material-icons large">keyboard_arrow_left</i>
                                     </div>
                                     <div class="center-box">
                                         <div class="image-window">
-                                            <div class="slideImage" style="background: lightgray;">
+                                            <div class="slideImage2" style="background: lightgray;">
                                             </div>
-                                            <div class="slideImage" style="background: white;">
+                                            <div class="slideImage2" style="background: white;">
                                             </div>
-                                            <div class="slideImage" style="background: lightgray;">
+                                            <div class="slideImage2" style="background: lightgray;">
                                             </div>
-                                            <div class="slideImage" style="background: white;">
+                                            <div class="slideImage2" style="background: white;">
                                             </div>
                                         </div>
                                         <div class="classified">
                                             CLASSIFIED
                                         </div>
                                     </div>
-                                    <div id="slide-right" class="cta-small">
+                                    <div id="slide-right2" class="cta-small">
                                         <i class="material-icons large">keyboard_arrow_right</i>
                                     </div>
                                 </div>
@@ -194,14 +237,12 @@
                                     Screenshots of work I completed on the coa ui.
                                 </div>
                             </div>
-                            <div class="is-mobile flex-row">
-                                <div class="flex-column">
-                                    <div>   
-                                        <strong>Project:</strong> ERP Chart of Accounts.
-                                    </div>
-                                    <div>
-                                        This is a web page to help transfer all of the old documents to the new Oracle system.
-                                    </div>
+                            <div class="is-mobile flex-column flex1">
+                                <div>   
+                                    <strong>Project:</strong> ERP Chart of Accounts.
+                                </div>
+                                <div>
+                                    This is a web page to help transfer all of the old documents to the new Oracle system.
                                 </div>
                                 <div>
                                     <strong>What I did:</strong>
@@ -564,23 +605,23 @@
                 } 
             }
 
-            $("#menu-icon").click(function(e){
-                console.log("menu icon clicked");
-                e.stopPropagation();                
-                $("#leftnav").toggleClass("closed");
-            });
+            // $("#menu-icon").click(function(e){
+            //     console.log("menu icon clicked");
+            //     e.stopPropagation();                
+            //     $("#leftnav").toggleClass("closed");
+            // });
 
-            $("#leftnav").click(function(e){
-                e.stopPropagation();
-            });
+            // $("#leftnav").click(function(e){
+            //     e.stopPropagation();
+            // });
 
-            $("body").click(function(){
-                console.log("body clicked");
-                $("#leftnav").addClass("closed");
-            });
+            // $("body").click(function(){
+            //     console.log("body clicked");
+            //     $("#leftnav").addClass("closed");
+            // });
 
 
-            //slide show 2
+            //slide show 1
             var slideIndex = 1;
             slideshow(slideIndex);
 
@@ -605,11 +646,38 @@
                 }
                 slides[slideIndex - 1].style.display = "block";
             }
+            //end slideshow 1
+
+            //slide show 2
+            var slideIndex2 = 1;
+            slideshow2(slideIndex2);
+
+            $("#slide-left2").click(function(){
+                slideshow2(slideIndex2 += -1);
+            });
+
+            $("#slide-right2").click(function(){
+                slideshow2(slideIndex2 += 1);
+            })
+
+            function slideshow2(n) {
+                var slides2 = document.getElementsByClassName("slideImage2");
+                if(n > slides2.length) {
+                    slideIndex2 = 1;
+                } 
+                if(n < 1) {
+                    slideIndex2 = slides2.length;
+                }
+                for(var i = 0; i < slides2.length; i++){
+                    slides2[i].style.display = "none";
+                }
+                slides2[slideIndex2 - 1].style.display = "block";
+            }
             //end slideshow 2
 
             //grid tiles
             
-                $(".tile").css({'height': $(".tile").width() + 'px'});
+            $(".tile").css({'height': $(".tile").width() + 'px'});
             function resizeTiles(){
                 $(".tile").css({'height': $(".tile").width() + 'px'});
             }
